@@ -1,0 +1,20 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .list {
+    justify-content: start;
+    gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .list {
+    justify-content: start;
+    gap: 18px;
+  }
+}
