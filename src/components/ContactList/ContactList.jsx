@@ -5,7 +5,7 @@ import { fetchContacts } from "../../redux/contacts/operations";
 import { selectFilteredContacts } from "../../redux/contacts/slice";
 import { selectError, selectLoading } from "../../redux/contacts/selectors";
 
-import Contact from "../Contact/Contact";
+import Contact from "../Contacts/Contact";
 import Loader from "../Loader/Loader";
 
 import s from "./ContactList.module.css";

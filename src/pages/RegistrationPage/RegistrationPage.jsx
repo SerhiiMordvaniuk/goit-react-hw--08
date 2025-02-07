@@ -8,7 +8,7 @@ import { registerThunk } from "../../redux/auth/operations";
 
 import { Link, useNavigate } from "react-router-dom";
 
-import s from "./RegistrationForm.module.css";
+import s from "./RegistrationPage.module.css";
 
 const Register = () => {
   const dispatch = useDispatch();

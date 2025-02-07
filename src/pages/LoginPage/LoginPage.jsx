@@ -7,7 +7,7 @@ import { loginThunk } from "../../redux/auth/operations";
 
 import { Link } from "react-router-dom";
 
-import s from "./LoginForm.module.css";
+import s from "./LoginPage.module.css";
 
 const Login = () => {
   const initialValues = {

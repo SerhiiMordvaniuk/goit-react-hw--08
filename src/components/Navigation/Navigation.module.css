@@ -1,0 +1,33 @@
+.nav {
+  display: flex;
+  gap: 12px;
+}
+
+.link {
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--light-text-color);
+  transition: all 250ms;
+
+  &:hover {
+    color: var(--primary-color);
+  }
+}
+
+.active {
+  color: var(--primary-color);
+}
+
+@media screen and (min-width: 768px) {
+  .link {
+    font-size: 16px;
+  }
+  .nav {
+    gap: 16px;
+  }
+}

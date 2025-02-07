@@ -8,11 +8,11 @@ import { selectIsRefreshing } from "../redux/auth/selectors";
 
 import NotFound from "../pages/NotFound/NotFound";
 import Layout from "./Layout";
-import Contacts from "../pages/Contacts/Contacts";
-import LoginForm from "../pages//LoginForm/LoginForm";
-import Register from "../pages/RegistrationForm/RegistrationForm";
+import ContactsPage from "../pages/ContactsPage/ContactsPage";
+import LoginPage from "../pages/LoginPage/LoginPage";
+import RegistrationPage from "../pages/RegistrationPage/RegistrationPage";
 import PrivateRoute from "./PrivateRoute";
-import PublicRoute from "./PublicRoute";
+import RestrictedRoute from "./RestrictedRoute";
 import Home from "../pages/Home/Home";
 
 import "./App.css";
@@ -33,7 +33,7 @@ function App() {
             path="/contacts"
             element={
               <PrivateRoute>
-                <Contacts />
+                <ContactsPage />
               </PrivateRoute>
             }
           />
@@ -42,17 +42,17 @@ function App() {
         <Route
           path="/login"
           element={
-            <PublicRoute>
-              <LoginForm />
-            </PublicRoute>
+            <RestrictedRoute>
+              <LoginPage />
+            </RestrictedRoute>
           }
         ></Route>
         <Route
           path="/register"
           element={
-            <PublicRoute>
-              <Register />
-            </PublicRoute>
+            <RestrictedRoute>
+              <RegistrationPage />
+            </RestrictedRoute>
           }
         ></Route>
       </Routes>
