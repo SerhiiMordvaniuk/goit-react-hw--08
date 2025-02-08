@@ -12,7 +12,6 @@ const Navigation = () => {
     return clsx(s.link, isActive && s.active);
   };
   const isLoggedIn = useSelector(selectIsLoggedIn);
-  console.log(isLoggedIn);
 
   return (
     <div className={s.nav}>
